@@ -1,7 +1,4 @@
 TextGlass browser domains
 
- * lite - quick patterns for basic browser and version detection
-          TODO: safari, opera, ...?
+TODO: safari, opera, ...?
 
- * full - full patterns for complete browser and feature detection
-          TODO?

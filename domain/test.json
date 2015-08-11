@@ -1,9 +1,9 @@
 {
   "TextGlassSpecVersion": 1.0,
   "type": "test",
-  "domain": "TextGlass_browser_lite",
+  "domain": "TextGlass_browser",
   "domainVersion": "1.0",
-  "description": "TextGlass browser detection lite tests",
+  "description": "TextGlass browser detection tests",
   "publishDate": "2015-08-10T20:48:16-0400",
   "legal": {
     "copyright": "(c) 2015 TextGlass",
