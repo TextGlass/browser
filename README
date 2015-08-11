@@ -2,3 +2,11 @@ TextGlass browser domains
 
 TODO: safari, opera, ...?
 
+Browser attributes:
+
+ * name
+ * vendor
+ * version
+ * mobile
+ * error
+
