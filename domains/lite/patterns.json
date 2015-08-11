@@ -15,35 +15,62 @@
   },
   "patternSet": {
     "defaultId": "unknown",
-    "simpleHashCount": 3,
+    "simpleHashCount": 5,
     "patterns": [
       {
         "patternId": "chrome",
-        "rankType": "Strong",
+        "rankType": "Weak",
         "patternType": "Simple",
         "patternTokens": ["Chrome"]
       },
       {
+        "patternId": "chrome_m",
+        "rankType": "Weak",
+        "patternType": "SimpleOrderedAnd",
+        "patternTokens": ["Chrome", "Mobile"]
+      },
+      {
+        "patternId": "firefox_m",
+        "rankType": "Weak",
+        "patternType": "SimpleOrderedAnd",
+        "patternTokens": ["Mobile", "Firefox"]
+      },
+      {
         "patternId": "firefox",
-        "rankType": "Strong",
+        "rankType": "Weak",
         "patternType": "Simple",
         "patternTokens": ["Firefox"]
       },
       {
         "patternId": "msie",
-        "rankType": "Strong",
+        "rankType": "Weak",
         "patternType": "Simple",
         "patternTokens": ["MSIE"]
       }
     ]
   },
   "attributes": {
+    "base": {
+      "parentId": "root",
+      "attributes": {
+        "error": "false",
+        "mobile": "false"
+      }
+    },
     "unknown": {
+      "parentId": "base",
       "attributes": {
         "error": "true"
       }
     },
+    "chrome_m": {
+      "parentId": "chrome",
+      "attributes": {
+        "mobile": "true"
+      }
+    },
     "chrome": {
+      "parentId": "base",
       "attributes": {
         "name": "Chrome",
         "vendor": "Google"
@@ -73,7 +100,14 @@
         }
       }
     },
+    "firefox_m": {
+      "parentId": "firefox",
+      "attributes": {
+        "mobile": "true"
+      }
+    },
     "firefox": {
+      "parentId": "base",
       "attributes": {
         "name": "Firefox",
         "vendor": "Mozilla"
@@ -104,6 +138,7 @@
       }
     },
     "msie": {
+      "parentId": "base",
       "attributes": {
         "name": "Internet Explorer",
         "vendor": "Microsoft"

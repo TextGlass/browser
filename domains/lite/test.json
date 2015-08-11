@@ -15,7 +15,26 @@
       "resultPatternId": "chrome",
       "resultAttributes": {
         "name": "Chrome",
+        "mobile": "false",
         "version": "15"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (Android; Mobile; rv:39.0) Gecko/39.0 Firefox/39.0",
+      "resultPatternId": "firefox_m",
+      "resultAttributes": {
+        "name": "Firefox",
+        "mobile": "true",
+        "version": "39"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (Linux; Android 4.4.4; SAMSUNG-SGH-I337 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.133 Mobile Safari/537.36",
+      "resultPatternId": "chrome_m",
+      "resultAttributes": {
+        "name": "Chrome",
+        "mobile": "true",
+        "version": "44"
       }
     },
     {
@@ -23,6 +42,7 @@
       "resultPatternId": "firefox",
       "resultAttributes": {
         "name": "Firefox",
+        "mobile": "false",
         "version": "8"
       }
     },
@@ -31,6 +51,7 @@
       "resultPatternId": "msie",
       "resultAttributes": {
         "name": "Internet Explorer",
+        "mobile": "false",
         "version": "9"
       }
     },
