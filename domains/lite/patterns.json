@@ -1,0 +1,137 @@
+{
+  "TextGlassSpecVersion": 1.0,
+  "type": "pattern",
+  "domain": "TextGlass_browser_lite",
+  "domainVersion": "1.0",
+  "description": "TextGlass browser detection lite",
+  "publishDate": "2015-08-10T20:48:16-0400",
+  "legal": {
+    "copyright": "(c) 2015 TextGlass",
+    "license": "none"
+  },
+  "inputParser": {
+    "tokenSeperators": [ " ", "/", "(", ")", ";" ],
+    "ngramConcatSize": 1
+  },
+  "patternSet": {
+    "defaultId": "unknown",
+    "simpleHashCount": 3,
+    "patterns": [
+      {
+        "patternId": "chrome",
+        "rankType": "Strong",
+        "patternType": "Simple",
+        "patternTokens": ["Chrome"]
+      },
+      {
+        "patternId": "firefox",
+        "rankType": "Strong",
+        "patternType": "Simple",
+        "patternTokens": ["Firefox"]
+      },
+      {
+        "patternId": "msie",
+        "rankType": "Strong",
+        "patternType": "Simple",
+        "patternTokens": ["MSIE"]
+      }
+    ]
+  },
+  "attributes": {
+    "unknown": {
+      "attributes": {
+        "error": "true"
+      }
+    },
+    "chrome": {
+      "attributes": {
+        "name": "Chrome",
+        "vendor": "Google"
+      },
+      "attributeTransformers": {
+        "version" : {
+          "defaultValue": "-1",
+          "transformers": [
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimeter": "Chrome/",
+                "get": 1
+              }
+            },
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimeter": ".",
+                "get": 0
+              }
+            },
+            {
+              "type": "IsNumber"
+            }
+          ]
+        }
+      }
+    },
+    "firefox": {
+      "attributes": {
+        "name": "Firefox",
+        "vendor": "Mozilla"
+      },
+      "attributeTransformers": {
+        "version" : {
+          "defaultValue": "-1",
+          "transformers": [
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimeter": "Firefox/",
+                "get": 1
+              }
+            },
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimeter": ".",
+                "get": 0
+              }
+            },
+            {
+              "type": "IsNumber"
+            }
+          ]
+        }
+      }
+    },
+    "msie": {
+      "attributes": {
+        "name": "Internet Explorer",
+        "vendor": "Microsoft"
+      },
+      "attributeTransformers": {
+        "version" : {
+          "defaultValue": "-1",
+          "transformers": [
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimeter": "MSIE ",
+                "get": 1
+              }
+            },
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimeter": ".",
+                "get": 0
+              }
+            },
+            {
+              "type": "IsNumber"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "TextGlassSpecVersion": 1.0,
+  "type": "test",
+  "domain": "TextGlass_browser_lite",
+  "domainVersion": "1.0",
+  "description": "TextGlass browser detection lite tests",
+  "publishDate": "2015-08-10T20:48:16-0400",
+  "legal": {
+    "copyright": "(c) 2015 TextGlass",
+    "license": "none"
+  },
+  "tests": [
+    {
+      "input": "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.121 Safari/535.2",
+      "resultPatternId": "chrome",
+      "resultAttributes": {
+        "name": "Chrome",
+        "version": "15"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (Windows NT 6.1; rv:8.0.1) Gecko/20100101 Firefox/8.0.1",
+      "resultPatternId": "firefox",
+      "resultAttributes": {
+        "name": "Firefox",
+        "version": "8"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)",
+      "resultPatternId": "msie",
+      "resultAttributes": {
+        "name": "Internet Explorer",
+        "version": "9"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.1 (KHTML, like Gecko) Ubuntu/11.04 Chromium/14.0.835.202 Chrome Safari/535.1",
+      "resultPatternId": "chrome",
+      "resultAttributes": {
+        "name": "Chrome",
+        "version": "-1"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.16) Gecko/20101206 SeaMonkey/2.0.11",
+      "resultPatternId": "unknown",
+      "resultAttributes": {
+        "error": "true"
+      }
+    }
+  ]
+}
