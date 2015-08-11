@@ -47,6 +47,24 @@
       }
     },
     {
+      "input": "Mozilla/5.0 (iPod touch; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12F69 Safari/600.1.4",
+      "resultPatternId": "safari_m",
+      "resultAttributes": {
+        "name": "Safari",
+        "mobile": "true",
+        "version": "8"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/600.7.12 (KHTML, like Gecko) Version/7.1.7 Safari/537.85.16",
+      "resultPatternId": "safari",
+      "resultAttributes": {
+        "name": "Safari",
+        "mobile": "false",
+        "version": "7"
+      }
+    },
+    {
       "input": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)",
       "resultPatternId": "msie",
       "resultAttributes": {
@@ -60,6 +78,29 @@
       "resultPatternId": "chrome",
       "resultAttributes": {
         "name": "Chrome",
+        "version": "-1"
+      }
+    },
+    {
+      "input": "Mozilla/5.0 (iPad; CPU OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/43.0.2357.56 Mobile/12F69 Safari/600.1.4",
+      "resultPatternId": "chrome_ios",
+      "resultAttributes": {
+        "name": "Chrome",
+        "mobile": "true",
+        "version": "43"
+      }
+    },
+    {
+      "input": "Opera/9.80 (Android; Opera Mini/7.6.40234/36.1344; U; en) Presto/2.12.423 Version/12.16",
+      "resultPatternId": "opera",
+      "resultAttributes": {
+        "version": "-1"
+      }
+    },
+    {
+      "input": "Opera/9.80 (X11; FreeBSD 8.1-RELEASE i386; Edition Next) Presto/2.12.388 Version/12.10",
+      "resultPatternId": "opera",
+      "resultAttributes": {
         "version": "-1"
       }
     },
