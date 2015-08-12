@@ -10,7 +10,7 @@
     "license": "none"
   },
   "inputParser": {
-    "tokenSeperators": [ " ", "/", "(", ")", ";" ],
+    "tokenSeperators": [ " ", "/", "(", ")", ";" ]
   },
   "patternSet": {
     "defaultId": "unknown",
