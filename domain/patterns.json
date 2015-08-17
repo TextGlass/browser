@@ -104,14 +104,14 @@
             {
               "type": "SplitAndGet",
               "parameters": {
-                "delimeter": "Chrome/",
+                "delimiter": "Chrome/",
                 "get": 1
               }
             },
             {
               "type": "SplitAndGet",
               "parameters": {
-                "delimeter": ".",
+                "delimiter": ".",
                 "get": 0
               }
             },
@@ -136,14 +136,14 @@
             {
               "type": "SplitAndGet",
               "parameters": {
-                "delimeter": "CriOS/",
+                "delimiter": "CriOS/",
                 "get": 1
               }
             },
             {
               "type": "SplitAndGet",
               "parameters": {
-                "delimeter": ".",
+                "delimiter": ".",
                 "get": 0
               }
             },
@@ -173,14 +173,14 @@
             {
               "type": "SplitAndGet",
               "parameters": {
-                "delimeter": "Version/",
+                "delimiter": "Version/",
                 "get": 1
               }
             },
             {
               "type": "SplitAndGet",
               "parameters": {
-                "delimeter": ".",
+                "delimiter": ".",
                 "get": 0
               }
             },
@@ -210,14 +210,14 @@
             {
               "type": "SplitAndGet",
               "parameters": {
-                "delimeter": "Firefox/",
+                "delimiter": "Firefox/",
                 "get": 1
               }
             },
             {
               "type": "SplitAndGet",
               "parameters": {
-                "delimeter": ".",
+                "delimiter": ".",
                 "get": 0
               }
             },
@@ -241,14 +241,14 @@
             {
               "type": "SplitAndGet",
               "parameters": {
-                "delimeter": "MSIE ",
+                "delimiter": "MSIE ",
                 "get": 1
               }
             },
             {
               "type": "SplitAndGet",
               "parameters": {
-                "delimeter": ".",
+                "delimiter": ".",
                 "get": 0
               }
             },
