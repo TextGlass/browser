@@ -75,7 +75,6 @@
     "base": {
       "parentId": "root",
       "attributes": {
-        "error": "false",
         "mobile": "false"
       }
     },
