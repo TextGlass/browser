@@ -97,7 +97,6 @@
       },
       "attributeTransformers": {
         "version" : {
-          "defaultValue": "-1",
           "transformers": [
             {
               "type": "SplitAndGet",
@@ -129,7 +128,6 @@
       },
       "attributeTransformers": {
         "version" : {
-          "defaultValue": "-1",
           "transformers": [
             {
               "type": "SplitAndGet",
@@ -166,7 +164,6 @@
       },
       "attributeTransformers": {
         "version" : {
-          "defaultValue": "-1",
           "transformers": [
             {
               "type": "SplitAndGet",
@@ -203,7 +200,6 @@
       },
       "attributeTransformers": {
         "version" : {
-          "defaultValue": "-1",
           "transformers": [
             {
               "type": "SplitAndGet",
@@ -234,7 +230,6 @@
       },
       "attributeTransformers": {
         "version" : {
-          "defaultValue": "-1",
           "transformers": [
             {
               "type": "SplitAndGet",
@@ -261,8 +256,7 @@
       "parentId": "base",
       "attributes": {
         "name": "Opera",
-        "vendor": "",
-        "version": "-1"
+        "vendor": ""
       }
     }
   }

@@ -73,8 +73,7 @@
       "input": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.1 (KHTML, like Gecko) Ubuntu/11.04 Chromium/14.0.835.202 Chrome Safari/535.1",
       "resultPatternId": "chrome",
       "resultAttributes": {
-        "name": "Chrome",
-        "version": "-1"
+        "name": "Chrome"
       }
     },
     {
@@ -88,17 +87,11 @@
     },
     {
       "input": "Opera/9.80 (Android; Opera Mini/7.6.40234/36.1344; U; en) Presto/2.12.423 Version/12.16",
-      "resultPatternId": "opera",
-      "resultAttributes": {
-        "version": "-1"
-      }
+      "resultPatternId": "opera"
     },
     {
       "input": "Opera/9.80 (X11; FreeBSD 8.1-RELEASE i386; Edition Next) Presto/2.12.388 Version/12.10",
-      "resultPatternId": "opera",
-      "resultAttributes": {
-        "version": "-1"
-      }
+      "resultPatternId": "opera"
     },
     {
       "input": "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.16) Gecko/20101206 SeaMonkey/2.0.11",
