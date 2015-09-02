@@ -8,5 +8,5 @@ Browser attributes
  * vendor
  * version
  * mobile
- * error
+ * unknown
 
