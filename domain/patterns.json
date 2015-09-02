@@ -60,8 +60,22 @@
       {
         "patternId": "msie",
         "rankType": "Weak",
+        "rankValue": -100,
         "patternType": "Simple",
         "patternTokens": ["MSIE"]
+      },
+      {
+        "patternId": "msie11",
+        "rankType": "Weak",
+        "rankValue": -50,
+        "patternType": "SimpleOrderedAnd",
+        "patternTokens": ["Trident", "rv:11.0"]
+      },
+      {
+        "patternId": "iemobile",
+        "rankType": "Weak",
+        "patternType": "Simple",
+        "patternTokens": ["IEMobile"]
       },
       {
         "patternId": "opera",
@@ -220,6 +234,42 @@
             }
           ]
         }
+      }
+    },
+    "iemobile": {
+      "parentId": "base",
+      "attributes": {
+        "name": "IE Mobile",
+        "vendor": "Microsoft"
+      },
+      "attributeTransformers": {
+        "version" : {
+          "transformers": [
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimiter": "IEMobile/",
+                "get": 1
+              }
+            },
+            {
+              "type": "SplitAndGet",
+              "parameters": {
+                "delimiter": ".",
+                "get": 0
+              }
+            },
+            {
+              "type": "IsNumber"
+            }
+          ]
+        }
+      }
+    },
+    "msie11": {
+      "parentId": "msie",
+      "attributes": {
+        "version": "11"
       }
     },
     "msie": {
