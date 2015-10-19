@@ -4,7 +4,7 @@
   "domain": "browser",
   "domainVersion": "1.0",
   "description": "TextGlass browser detection tests",
-  "publishDate": "2015-09-02T17:00:55-0400",
+  "publishDate": "2015-10-19T11:47:22-0400",
   "legal": {
     "copyright": "(c) 2015 TextGlass",
     "license": "Apache License 2.0"
@@ -82,6 +82,7 @@
       "resultPatternId": "iemobile",
       "resultAttributes": {
         "name": "IE Mobile",
+        "mobile": "true",
         "version": "11"
       }
     },
