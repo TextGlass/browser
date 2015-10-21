@@ -2,7 +2,7 @@
   "TextGlassSpecVersion": 1.0,
   "type": "pattern",
   "domain": "browser",
-  "domainVersion": "1.0",
+  "domainVersion": "1.0.0",
   "description": "TextGlass browser detection",
   "publishDate": "2015-10-19T11:47:22-0400",
   "legal": {
