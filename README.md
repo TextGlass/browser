@@ -10,3 +10,8 @@ Browser attributes
  * mobile
  * unknown
 
+Releases
+--------
+
+http://textglass.org/releases/browser/
+
